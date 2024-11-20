@@ -17,3 +17,14 @@ INSERT INTO employees VALUES
 (3, 'Charlie', 1, 5500),
 (4, 'David', 3, 8000),
 (5, 'Eve', 2, 6500);
+
+select dept_id,
+count(*) as total_employees,
+avg(salary) as avg_salary
+from employees
+group by dept_id
+order by avg_salary desc
+limit 1;
+
+#through pyspark
+
