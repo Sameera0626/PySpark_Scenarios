@@ -1,1 +1,19 @@
+Task:
+Count the number of employees in each department and find the department with the highest average salary.
 
+#through SQL
+-- Create employee table
+CREATE TABLE employees (
+    emp_id INT,
+    emp_name VARCHAR(50),
+    dept_id INT,
+    salary DECIMAL(10, 2)
+);
+
+-- Insert sample data
+INSERT INTO employees VALUES 
+(1, 'Alice', 1, 5000),
+(2, 'Bob', 2, 7000),
+(3, 'Charlie', 1, 5500),
+(4, 'David', 3, 8000),
+(5, 'Eve', 2, 6500);
